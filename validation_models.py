@@ -17,7 +17,7 @@ class Peers(BaseModel):
     """
 
     neighbor: IPv4Address
-    peer_asn: int = Field(gt=0, le=65536)
+    peer_asn: int = Field(gt=0, le=65535)
 
 
 class BGPConfig(BaseModel):
@@ -28,5 +28,5 @@ class BGPConfig(BaseModel):
         peers: Remote BGP peer configurations. Must adhere to the types defined in Peers.
     """
 
-    asn: int = Field(gt=0, le=65536)
+    asn: int = Field(gt=0, le=65535)
     peers: Optional[List[Peers]]
