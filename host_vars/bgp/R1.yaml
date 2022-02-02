@@ -1,0 +1,8 @@
+---
+- asn: 11111
+  peers:
+    - neighbor: "2.2.2.2"
+      peer_asn: 65002
+
+    - neighbor: "3.3.3.3"
+      peer_asn: 65003

@@ -1,0 +1,8 @@
+router bgp {{ asn }}
+{% if peers is defined %}
+{% for neighbor in peers %}
+  neighbor {{ neighbor["neighbor"] }} remote-as {{ neighbor["peer_asn"] }}
+  address-family ipv4 unicast
+  exit
+{% endfor %}
+{% endif %}

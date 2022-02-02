@@ -1,0 +1,10 @@
+asyncssh==2.9.0
+cffi==1.15.0
+cryptography==36.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+pycparser==2.21
+pydantic==1.9.0
+PyYAML==6.0
+scrapli==2022.1.30
+typing-extensions==4.0.1
